@@ -1,0 +1,25 @@
+{
+  "name": "nodeproject-docr",
+  "version": "1.0.0",
+  "description": "A real-world style Express API project with users, products, and todos endpoints.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "http",
+    "express",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
