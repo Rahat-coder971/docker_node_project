@@ -7,8 +7,8 @@ COPY package*.json ./
 RUN npm install 
 
 # -------- Stage 2: Final runtime image --------
-FROM node:25-alpine
-
+# FROM node:25-alpine  .. 
+FROM gcr.io/distroless/nodejs20-debian13
 WORKDIR /app
 
 # Copy node_modules from deps stage
