@@ -1,5 +1,5 @@
 # -------- Stage 1: Install dependencies --------
-FROM node:18
+FROM node:18 AS deps
 
 WORKDIR /app
 
@@ -17,6 +17,6 @@ COPY --from=deps /app/node_modules ./node_modules
 # Copy application code
 COPY . .
 
-EXPOSE 3000
+EXPOSE 5000
 
-CMD ["node", "index.js"]
+CMD ["index.js"]
